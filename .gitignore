@@ -1,1 +1,24 @@
-UT3_TS/Calculadora/NOTOCARdist/*
+# Dependencias
+node_modules/
+
+# Salida compilada de TypeScript
+dist/
+out-tsc/
+*.js.map
+
+# CSS compilado desde SCSS
+**/css/*.css
+**/css/*.css.map
+.sass-cache/
+
+# Angular
+.angular/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
