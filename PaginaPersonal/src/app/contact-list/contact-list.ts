@@ -12,6 +12,10 @@ export class ContactList {
 
   constructor(private contactService: ContactService) {}
 
+  ngOnInit() {
+    this.contactService.cargarContactos();
+  }
+
   listarContactos(): ContactModel[] {
     return this.contactService.listarContactos();
   }
