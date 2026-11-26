@@ -31,6 +31,6 @@ export class ContactForm {
   sendMessage() {
     let contacto = new ContactModel(this.contactForm.value.email!, this.contactForm.value.message!);
     this.contactService.anadirContacto(contacto);
-    this.contactForm.reset(); // opcional: vacía el formulario
+    this.contactForm.reset();
   }
 }
