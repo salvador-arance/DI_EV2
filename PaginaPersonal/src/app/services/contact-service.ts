@@ -28,8 +28,12 @@ export class ContactService {
   }
 
   anadirContacto(contacto: ContactModel) {
-    // Usamos .update() creando un nuevo array para que Angular detecte el cambio
-    this.contactosRealizados.update(listaActual => [...listaActual, contacto]);
+    this.http.post<ContactModel>(this.apiUrl, contacto).subscribe({
+      next: nuevoContacto => {
+        this.cargarContactos();
+      },
+      error: error => console.error('Error al crear el contacto', error)
+    });
   }
 
   listarContactos(): ContactModel[] {

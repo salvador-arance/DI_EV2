@@ -2,6 +2,7 @@ import { Component, output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ContactService } from '../services/contact-service';
 import { ContactModel } from '../models/ContactModel';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   imports: [ReactiveFormsModule],
@@ -17,7 +18,7 @@ export class ContactForm {
   });
 
 
-  constructor(private contactService: ContactService){};
+  constructor(private contactService: ContactService, private http: HttpClient){};
 
   get email() {
     return this.contactForm.get('email');
@@ -30,7 +31,6 @@ export class ContactForm {
   sendMessage() {
     let contacto = new ContactModel(this.contactForm.value.email!, this.contactForm.value.message!);
     this.contactService.anadirContacto(contacto);
+    this.contactForm.reset(); // opcional: vacía el formulario
   }
-
-
 }
