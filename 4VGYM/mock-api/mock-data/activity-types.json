@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "BodyPump", "number-monitors": 2 },
+  { "id": 2, "name": "Spinning", "number-monitors": 1 },
+  { "id": 3, "name": "Pilates", "number-monitors": 1 },
+  { "id": 4, "name": "Crossfit", "number-monitors": 2 }
+]

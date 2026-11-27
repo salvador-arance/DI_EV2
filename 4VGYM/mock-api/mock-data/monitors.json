@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Laura Martínez",
+    "email": "laura.martinez@4vgym.test",
+    "phone": "600111222",
+    "photo": "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    "id": 2,
+    "name": "Javier Ruiz",
+    "email": "javier.ruiz@4vgym.test",
+    "phone": "600333444",
+    "photo": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": 3,
+    "name": "Ane Etxeberria",
+    "email": "ane.etxeberria@4vgym.test",
+    "phone": "600555666",
+    "photo": "https://i.pravatar.cc/150?img=32"
+  },
+  {
+    "id": 4,
+    "name": "Carlos Sanz",
+    "email": "carlos.sanz@4vgym.test",
+    "phone": "600777888",
+    "photo": "https://i.pravatar.cc/150?img=15"
+  }
+]
